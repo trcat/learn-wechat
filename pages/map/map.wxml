@@ -1,4 +1,4 @@
 <!-- map.wxml -->
 <view>
-  <map name="map-test" longitude="{{longitude}}" latitude="{{latitude}}"></map>
+  <map name="map-test" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}"></map>
 </view>
