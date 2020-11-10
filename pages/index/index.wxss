@@ -17,5 +17,21 @@
 }
 
 .usermotto {
-  margin-top: 200px;
+  margin-top: 40rpx;
+  text-align: center;
+}
+
+.usermotto .user-motto {
+  line-height: 40px;
+  display: block;
+  width: 100%;
+  min-height: 40px;
+}
+
+button {
+  margin-bottom: 40rpx;
+}
+
+navigator {
+  margin-bottom: 40rpx;
 }

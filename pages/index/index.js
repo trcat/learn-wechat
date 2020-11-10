@@ -1,13 +1,18 @@
 //index.js
 //获取应用实例
 const app = getApp()
+const buttonText = {
+  show: '显示',
+  hide: '隐藏'
+}
 
 Page({
   data: {
     motto: '',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    buttonText: `点我${buttonText.show}`
   },
   //事件处理函数
   bindViewTap: function () {
@@ -17,7 +22,15 @@ Page({
   },
   clickMe: function () {
     this.setData({
-      motto: 'Hello World'
+      motto: this.data.motto ? '' : 'Hello World',
+      buttonText: this.data.buttonText.includes(buttonText.show) ? `点我${buttonText.hide}` : `点我${buttonText.show}`
+    })
+  },
+  handleSAOYISAO() {
+    wx.scanCode({
+      success: (res) => {
+        console.log(res)
+      }
     })
   },
   onLoad: function () {

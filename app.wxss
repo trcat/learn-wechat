@@ -7,4 +7,14 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+
+navigator {
+  width: 184px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #409EFF;
+  line-height: 40px;
+  color: white;
+  font-weight: bold;
+}
