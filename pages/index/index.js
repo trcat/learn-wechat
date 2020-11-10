@@ -29,7 +29,10 @@ Page({
   handleSAOYISAO() {
     wx.scanCode({
       success: (res) => {
-        console.log(res)
+        wx.showModal({
+          title: '二维码内容',
+          content: res.result
+        })
       }
     })
   },
