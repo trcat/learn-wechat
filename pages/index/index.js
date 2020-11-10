@@ -33,6 +33,11 @@ Page({
           title: '二维码内容',
           content: res.result
         })
+      },
+      fail: () =>{
+        wx.showToast({
+          title: '扫码失败',
+        })
       }
     })
   },
