@@ -16,33 +16,7 @@ Page({
     nbFrontColor: '#000000',
     nbBackgroundColor: '#ffffff',
   },
-  //事件处理函数
-  bindViewTap: function () {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  clickMe: function () {
-    this.setData({
-      motto: this.data.motto ? '' : `${this.data.userInfo.nickName} 你好呀~`,
-      buttonText: this.data.buttonText.includes(buttonText.show) ? `点我${buttonText.hide}` : `点我${buttonText.show}`
-    })
-  },
-  handleSAOYISAO() {
-    wx.scanCode({
-      success: (res) => {
-        wx.showModal({
-          title: '二维码内容',
-          content: res.result
-        })
-      },
-      fail: () =>{
-        wx.showToast({
-          title: '扫码失败',
-        })
-      }
-    })
-  },
+  // 生命周期
   onLoad: function () {
     // 测试 onLoad
     console.log('index onLoad')
@@ -113,6 +87,33 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+  //事件处理函数
+  bindViewTap: function () {
+    wx.navigateTo({
+      url: '../logs/logs'
+    })
+  },
+  clickMe: function () {
+    this.setData({
+      motto: this.data.motto ? '' : `${this.data.userInfo.nickName} 你好呀~`,
+      buttonText: this.data.buttonText.includes(buttonText.show) ? `点我${buttonText.hide}` : `点我${buttonText.show}`
+    })
+  },
+  handleSAOYISAO() {
+    wx.scanCode({
+      success: (res) => {
+        wx.showModal({
+          title: '二维码内容',
+          content: res.result
+        })
+      },
+      fail: () => {
+        wx.showToast({
+          title: '扫码失败',
+        })
+      }
     })
   },
 })
