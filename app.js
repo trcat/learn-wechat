@@ -36,6 +36,7 @@ App({
         }
       }
     })
+    // 计算设备高度
   },
   onShow() {
     console.log('app onShow')
@@ -48,5 +49,5 @@ App({
   },
   globalData: {
     userInfo: null
-  }
+  },
 })

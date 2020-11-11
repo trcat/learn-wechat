@@ -12,7 +12,9 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    buttonText: `点我${buttonText.show}`
+    buttonText: `点我${buttonText.show}`,
+    nbFrontColor: '#000000',
+    nbBackgroundColor: '#ffffff',
   },
   //事件处理函数
   bindViewTap: function () {
@@ -80,6 +82,10 @@ Page({
         }
       })
     }
+    this.setData({
+      nbFrontColor: '#fff',
+      nbBackgroundColor: '#409EFF',
+    })
   },
   onShow() {
     // 测试 onShow

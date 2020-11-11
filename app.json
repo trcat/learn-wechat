@@ -5,11 +5,26 @@
     "pages/map/map"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "DayDay的工坊",
-    "navigationBarTextStyle":"black",
-    "enablePullDownRefresh": true
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "selectedColor": "#409EFF",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/tabbar.png",
+      "selectedIconPath": "/images/tabbar-selected.png"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "日志",
+      "iconPath": "/images/tabbar.png",
+      "selectedIconPath": "/images/tabbar-selected.png"
+    }, {
+      "pagePath": "pages/map/map",
+      "text": "地图",
+      "iconPath": "/images/tabbar.png",
+      "selectedIconPath": "/images/tabbar-selected.png"
+    }]
   },
   "permission": {
     "scope.userLocation": {
