@@ -1,0 +1,4 @@
+<!-- navbar component -->
+<view class="class navbar" style="{{style}}">
+  <icon></icon><text>DayDay的工坊</text>
+</view>
