@@ -1,4 +1,5 @@
 <!-- navbar component -->
-<view class="class navbar" style="{{style}}">
-  <icon></icon><text>DayDay的工坊</text>
+<view class="class navbar" style="height:{{height}}px; padding-top:{{paddingTop}}px;">
+  <image src="/images/nav-icon.png"></image>
+  <text style="line-height:{{textLineHeight}}px">DayDay的工坊</text>
 </view>

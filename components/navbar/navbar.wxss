@@ -1,4 +1,16 @@
 .navbar {
   width: 100%;
   background-color: #409EFF;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+  position: relative;
+  top: 10rpx;
 }

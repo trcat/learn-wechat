@@ -1,18 +1,18 @@
 Component({
   externalClasses: ['class'],
   data: {
-    style: {}
+    height: 0,
+    paddingTop: 0,
+    textLineHeight: 0
   },
   lifetimes: {
     attached() {
       const { top, height } = wx.getMenuButtonBoundingClientRect()
-      const _height = top + height + 20
-      const paddingTop = top
+      
       this.setData({
-        style: {
-          height,
-          paddingTop
-        }
+        height: top + height + 20,
+        paddingTop: top,
+        textLineHeight: height
       })
     }
   }
