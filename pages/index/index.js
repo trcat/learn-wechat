@@ -43,14 +43,6 @@ Page({
       }
     })
   },
-  getUserInfo: function (e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-  },
   onLoad: function () {
     // 测试 onLoad
     console.log('index onLoad')
@@ -114,5 +106,13 @@ Page({
       title: 'DayDay的工坊',
       path: '/pages/index/index'
     }
-  }
+  },
+  getUserInfo: function (e) {
+    console.log(e)
+    app.globalData.userInfo = e.detail.userInfo
+    this.setData({
+      userInfo: e.detail.userInfo,
+      hasUserInfo: true
+    })
+  },
 })
