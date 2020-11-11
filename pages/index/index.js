@@ -41,7 +41,19 @@ Page({
       }
     })
   },
+  getUserInfo: function (e) {
+    console.log(e)
+    app.globalData.userInfo = e.detail.userInfo
+    this.setData({
+      userInfo: e.detail.userInfo,
+      hasUserInfo: true
+    })
+  },
   onLoad: function () {
+    // 测试 onLoad
+    console.log('index onLoad')
+
+    // 更新用户信息
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -69,12 +81,32 @@ Page({
       })
     }
   },
-  getUserInfo: function (e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+  onShow() {
+    // 测试 onShow
+    console.log('index onShow')
+  },
+  onReady() {
+    // 测试 onReady
+    console.log('index onReady')
+  },
+  onHide() {
+    // 测试 onHide
+    console.log('index onHide')
+  },
+  onUnload() {
+    // 测试 onUnload
+    console.log('index onUnload')
+  },
+  onShareAppMessage() {
+    return {
+      title: 'DayDay的工坊',
+      path: '/pages/index/index'
+    }
+  },
+  onShareTimeline() {
+    return {
+      title: 'DayDay的工坊',
+      path: '/pages/index/index'
+    }
   }
 })
