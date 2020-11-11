@@ -22,7 +22,7 @@ Page({
   },
   clickMe: function () {
     this.setData({
-      motto: this.data.motto ? '' : 'Hello World',
+      motto: this.data.motto ? '' : `${this.data.userInfo.nickName} 你好呀~`,
       buttonText: this.data.buttonText.includes(buttonText.show) ? `点我${buttonText.hide}` : `点我${buttonText.show}`
     })
   },
