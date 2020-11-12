@@ -1,5 +1,11 @@
 Component({
   externalClasses: ['class'],
+  properties: {
+    title: { // 导航栏标题
+      type: String,
+      value: ''
+    }
+  },
   data: {
     height: 0,
     paddingTop: 0,

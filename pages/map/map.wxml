@@ -1,5 +1,5 @@
 <!-- map.wxml -->
-<navbar />
+<navbar title="地图"/>
 <view>
   <map name="map-test" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}"></map>
 </view>
