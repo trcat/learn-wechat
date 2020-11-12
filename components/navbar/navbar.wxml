@@ -3,3 +3,4 @@
   <image src="/images/nav-icon.png"></image>
   <text style="line-height:{{textLineHeight}}px">DayDay的工坊</text>
 </view>
+<view style="width: 100%; height: {{height}}px"></view>
