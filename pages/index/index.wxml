@@ -11,7 +11,7 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
     <button bindtap="clickMe">{{buttonText}}</button>
-    <navigator url="/pages/map/map">前往地图组件页面</navigator>
+    <navigator url="/pages/map/map" open-type="switchTab">前往地图组件页面</navigator>
     <button bindtap="handleSAOYISAO">点击扫一扫</button>
   </view>
 </view>
